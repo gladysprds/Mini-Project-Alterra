@@ -24,12 +24,12 @@ public class ratings {
     }
 
     @When("I request GET ratings of a product")
-    public void iRequestGETRatingsOfAProduct() {
+    public void iRequestGETRatingsOfAProduct() throws IOException {
         getProductRatings.requestProductRatings();
     }
 
     @And("I get the rating of a product")
-    public void iGetTheRatingOfAProduct() {
+    public void iGetTheRatingOfAProduct() throws IOException {
         getProductRatings.validateProductRatings();
     }
 

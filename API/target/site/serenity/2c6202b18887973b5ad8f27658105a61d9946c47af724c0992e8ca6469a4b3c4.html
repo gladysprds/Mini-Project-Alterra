@@ -147,7 +147,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-05-2022 17:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-05-2022 07:58</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -184,9 +184,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">
+                                <span class="success-color">
                                     POST - As a user i want to give ratings on a product
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -245,7 +245,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">907ms</span></td>
+                        <td width="100"><span class="top-level-step">275ms</span></td>
                     </tr>
                     <tr class="test-SUCCESS">
 
@@ -272,7 +272,7 @@
                         </td>
 
                         <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                        <td width="100"><span class="top-level-step">5s 555ms</span></td>
+                        <td width="100"><span class="top-level-step">566ms</span></td>
                     </tr>
                         <tr>
                             <td colspan="5">
@@ -289,7 +289,7 @@
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="nested-group-step">
-                                                POST https://be-qa.alta.id/api/products/452/ratings
+                                                POST https://be-qa.alta.id/api/products/2054/ratings
                                         </span>
                                 <span class="evidence">
                                         <span class="piece-of-evidence">
@@ -305,8 +305,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4>Response</h4>
-                                        <p>URL: https://be-qa.alta.id/api/products/452/ratings</p>
-                                        <p>Status code: 500</p>
+                                        <p>URL: https://be-qa.alta.id/api/products/2054/ratings</p>
+                                        <p>Status code: 200</p>
                                         <p>Content Type: application/json</p>
                                         <h4>Request Headers</h4>
                                         <pre>Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6ImdsYWR5cyIsIkVtYWlsIjoiZ2xhZHlzQGdtYWlsLmNvbSJ9._PXg22NAe3rGSDNMNK4LM-NYA0OywJMf06I_f3_LBw8<br>Accept=*/*<br>Content-Type=application/json</pre>
@@ -315,9 +315,9 @@
                                         <h4>Request Cookies</h4>
                                         <pre></pre>
                                         <h4>Response Headers</h4>
-                                        <pre>Server: nginx/1.14.2<br>Date: Fri, 13 May 2022 10:50:38 GMT<br>Content-Type: application/json<br>Content-Length: 29<br>Connection: keep-alive</pre>
+                                        <pre>Server: nginx/1.14.2<br>Date: Wed, 18 May 2022 00:59:40 GMT<br>Content-Type: application/json<br>Content-Length: 112<br>Connection: keep-alive</pre>
                                     <h4>Response Body</h4>
-                                        <pre>{<br>    &quot;error&quot;: &quot;record not found&quot;<br>}</pre>
+                                        <pre>{<br>    &quot;data&quot;: {<br>        &quot;ID&quot;: 2054,<br>        &quot;Name&quot;: &quot;Mesin Waktu Doraemon&quot;,<br>        &quot;Description&quot;: &quot;&quot;,<br>        &quot;Price&quot;: 2100000,<br>        &quot;Ratings&quot;: 3,<br>        &quot;Categories&quot;: [<br>            <br>        ]<br>    }<br>}</pre>
                                 </div>
                             </div>
                         </div>
@@ -328,112 +328,40 @@
                         </td>
 
                         <td width="130"><span class="nested-group-step">SUCCESS</span></td>
-                        <td width="100"><span class="nested-group-step">015ms</span></td>
+                        <td width="100"><span class="nested-group-step"></span></td>
                     </tr>
 
                                 </table>
                             </td>
                         </tr>
-                    <tr class="test-FAILURE">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="2"></a>
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                                   style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2 failure-icon"
-                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
-                                </a>
+                                <span style="margin-left: 20px;"
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                                   style="display:block;">
                                     <span class="top-level-step">
                                                 Then I validate the status code is 200
                                         </span>
-                                </a>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">FAILURE</span></td>
-                        <td width="100"><span class="top-level-step">187ms</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">024ms</span></td>
                     </tr>
-                        <tr>
-                            <td colspan="5">
-                                <table id="stepSection2" class="step-table-nested" style="display:none;">
-                    <tr class="test-FAILURE">
-
-                        <td width="70" class="step-icon">
-                            <a name="2-0"></a>
-                                <span style="margin-left: 40px;"
-                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="nested-group-step">
-                                                Verify status code: 200
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="nested-group-step">FAILURE</span></td>
-                        <td width="100"><span class="nested-group-step">015ms</span></td>
-                    </tr>
-                        <tr class="test-FAILURE">
-                            <td width="40">&nbsp</td>
-                            <td width="%" colspan="3" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">java.lang.AssertionError: 1 expectation failed.<br>Expected status code &lt;200&gt; but was &lt;500&gt;.<br></span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-5""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-5">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.AssertionError </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)<br />io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)<br />io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:84)<br />io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy:-1)<br />groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)<br />groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:136)<br />io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:-1)<br />starter.categories.GetAllCategories.verifyStatusCode(GetAllCategories.java:29)<br />starter.stepdefinitions.categoriesStep.iValidateTheStatusCodeIs(categoriesStep.java:33)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                            </td>
-                        </tr>
-
-                                </table>
-                            </td>
-                        </tr>
-                    <tr class="test-SKIPPED">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="3"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
@@ -447,13 +375,13 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SKIPPED</span></td>
-                        <td width="100"><span class="top-level-step">015ms</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">408ms</span></td>
                     </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>7.17s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>1.5s</em></span></td>
                 </tr>
 
             </table>

@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Ratings
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.489 s <<< FAILURE! - in Ratings
-Ratings.POST - As a user i want to give ratings on a product  Time elapsed: 7.489 s  <<< ERROR!
-net.serenitybdd.core.exceptions.SerenityManagedException: 
-1 expectation failed.
-Expected status code <200> but was <500>.
-
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.876 s - in Ratings

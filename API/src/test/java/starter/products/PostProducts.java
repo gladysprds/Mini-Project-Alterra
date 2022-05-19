@@ -1,8 +1,10 @@
 package starter.products;
 
+import io.restassured.response.Response;
 import net.serenitybdd.rest.SerenityRest;
 import org.json.simple.JSONObject;
 
+import java.io.FileWriter;
 import java.io.IOException;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -14,10 +16,10 @@ public class PostProducts {
     public String endpointPostProducts(){
         return base_url + "products";
     }
-    public void requestDataPostProduct() throws IOException {
+    public void requestDataPostProduct() {
         JSONObject requestData = new JSONObject();
-        requestData.put("name","Mesin Jahit");
-        requestData.put("price",25000);
+        requestData.put("name","Mesin Waktu Murah");
+        requestData.put("price",2100000);
         requestData.put("categories[0]",9);
         SerenityRest.given().header("Content-Type", "application/json").body(requestData.toJSONString());
         SerenityRest.when().post(endpointPostProducts());
@@ -25,7 +27,7 @@ public class PostProducts {
     }
 
     public void validateProductsAfterCreateProduct(){
-        SerenityRest.then().body("data.Name", equalTo("Mesin Jahit"));
+        SerenityRest.then().body("data.Name", equalTo("Mesin Waktu Murah"));
     }
 
 

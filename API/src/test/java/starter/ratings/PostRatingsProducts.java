@@ -18,28 +18,32 @@ public class PostRatingsProducts {
     }
 
     public String endpointProductRatings(){
-        return base_url +"products/" + 452 +"/ratings";
+        return base_url +"products/{idProduct}" +"/ratings";
     }
     public void requestPostRatings()throws Exception{
+        Integer idProduct = Integer.valueOf(FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//idProduct.json"), StandardCharsets.UTF_8));
         token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
         JSONObject requestData = new JSONObject();
         requestData.put("count",3);
         SerenityRest.given().header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
+                .pathParam("idProduct",idProduct)
                 .body(requestData.toJSONString());
                 SerenityRest.when().post(endpointProductRatings());
     }
 
     public void validateDataDetailWithRating(){
-        SerenityRest.then().body("data.ID", equalTo(452));
+        SerenityRest.then().body("data.Ratings", equalTo(3));
     }
 
     public void notGiveAnyRating()throws Exception{
+        Integer idProduct = Integer.valueOf(FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//idProduct.json"), StandardCharsets.UTF_8));
         token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
         JSONObject requestData = new JSONObject();
         requestData.put("count",null);
         SerenityRest.given().header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
+                .pathParam("idProduct",idProduct)
                 .body(requestData.toJSONString());
         SerenityRest.when().post(endpointProductRatings());
     }
@@ -49,11 +53,13 @@ public class PostRatingsProducts {
     }
 
     public void notGiveNumber()throws Exception{
+        Integer idProduct = Integer.valueOf(FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//idProduct.json"), StandardCharsets.UTF_8));
         token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
         JSONObject requestData = new JSONObject();
         requestData.put("count","x");
         SerenityRest.given().header("Content-Type", "application/json")
                 .header("Authorization", "Bearer " + token)
+                .pathParam("idProduct",idProduct)
                 .body(requestData.toJSONString());
         SerenityRest.when().post(endpointProductRatings());
     }

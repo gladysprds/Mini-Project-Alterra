@@ -1,4 +1,4 @@
-Feature: Order
+Feature: transaction
   As a user
   i want to pay my product
   so that i get my product

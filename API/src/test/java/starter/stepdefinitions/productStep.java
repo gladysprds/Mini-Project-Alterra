@@ -55,12 +55,12 @@ public class productStep {
     }
 
     @When("I request GET products by ID")
-    public void iRequestGETProductsByID() {
+    public void iRequestGETProductsByID() throws Exception {
         getProductById.requestGetProductById();
     }
 
     @Then("i validate data of a product")
-    public void iValidateDataOfAProduct() {
+    public void iValidateDataOfAProduct() throws IOException {
         getProductById.validateDataDetailById();
     }
 

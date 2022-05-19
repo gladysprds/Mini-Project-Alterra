@@ -7,6 +7,8 @@ import net.thucydides.core.annotations.Steps;
 import starter.comments.GetProductComments;
 import starter.comments.PostCommentProduct;
 
+import java.io.IOException;
+
 
 public class commentStep {
 
@@ -24,12 +26,12 @@ public class commentStep {
 
 
     @When("I request GET product comments")
-    public void iRequestGETProductComments() {
+    public void iRequestGETProductComments() throws IOException {
         getProductComments.requestGetCommentsById();
     }
 
     @And("validate data detail of product comments")
-    public void validateDataDetailOfProductComments() {
+    public void validateDataDetailOfProductComments() throws IOException {
         getProductComments.validateCommentById();
     }
 

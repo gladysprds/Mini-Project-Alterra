@@ -18,7 +18,7 @@ public class CreateUser {
     String email;
 
     public String endpointCreateUser(){
-        return base_url +"auth/register";
+        return base_url + "auth/register";
     }
 
     public void requestPostUser(String fullname, String email,String password){
@@ -49,14 +49,13 @@ public class CreateUser {
 
 
 
+    public void verifyStatusCode(int status_code){
+        then().statusCode(equalTo(status_code));
+    }
     public void validateDataDetail(String message){
         if (message.equals("success")){
             SerenityRest.then().body("data.Email", equalTo(this.email));
         }
-    }
-
-    public void verifyStatusCode(int status_code){
-        then().statusCode(equalTo(status_code));
     }
 
     public void getDataAfterCreateForOtherRequest(){
@@ -65,7 +64,6 @@ public class CreateUser {
         String password = response.body().path("data.Password");
         try (FileWriter file = new FileWriter("src//test//resources//filejson//registration.json")) {
             file.write(email + "\n" + password);
-
             file.flush();
         } catch (IOException e) {
             e.printStackTrace();

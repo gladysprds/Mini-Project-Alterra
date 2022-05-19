@@ -2,6 +2,8 @@ starter\stepdefinitions\transStep.class
 starter\pages\HomePage.class
 starter\stepdefinitions\registerStep.class
 starter\stepdefinitions\stepdefinition.class
+starter\pages\LogOutPage.class
+starter\stepdefinitions\logout.class
 starter\stepdefinitions\orderStep.class
 starter\pages\LoginPage.class
 utils\General.class

@@ -10,7 +10,7 @@ public class HomePage extends PageObject {
         return By.className("v-toolbar__title");
     }
 
-    @Step
+
     public boolean homePageAppear(){
         return $(homePageText()).isDisplayed();
     }

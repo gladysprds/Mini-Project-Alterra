@@ -11,7 +11,7 @@ public class OrderPage extends PageObject {
     }
 
     private By buttonBeli(){
-        return By.xpath("//*[@id='209']//*[span[text() = 'Beli']]");
+        return By.xpath("//*[@class = 'col-md-4 col-lg-3 col-6'][1]//span[text() = 'Beli']");
     }
 
     private By product(){
@@ -52,7 +52,7 @@ public class OrderPage extends PageObject {
 
     @Step
     public void validateProduct(){
-        $(product()).isDisplayed();
+        $(product()).equals("1");
     }
 
     @Step
