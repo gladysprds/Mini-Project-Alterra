@@ -63,6 +63,22 @@ public class PostRatingsProducts {
                 .body(requestData.toJSONString());
         SerenityRest.when().post(endpointProductRatings());
     }
+
+    public void giveNumberOverFive()throws Exception{
+        Integer idProduct = Integer.valueOf(FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//idProduct.json"), StandardCharsets.UTF_8));
+        token = FileUtils.readFileToString(new File(System.getProperty("user.dir") + "//src//test//resources//filejson//tokens.json"), StandardCharsets.UTF_8);
+        JSONObject requestData = new JSONObject();
+        requestData.put("count",6);
+        SerenityRest.given().header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + token)
+                .pathParam("idProduct",idProduct)
+                .body(requestData.toJSONString());
+        SerenityRest.when().post(endpointProductRatings());
+    }
+
+    public void validateErrormessageDisplayedForRating(){
+        SerenityRest.then().body("error", equalTo("ERROR: new row for relation \"ratings\" violates check constraint \"ratings_count_check\" (SQLSTATE 23514)"));
+    }
     }
 
 

@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Products","type":"feature","href":"2f1802e40d35efe73d634ba4da16a5b1f65d3e922937c0ba730d92fcebc97720.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e8 scenarios\u003c/span\u003e"]}];
+            var requirementsTree = [];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -218,7 +218,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-05-2022 07:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated </span>
     <br style="clear:left"/>
 </div>
 
@@ -232,23 +232,11 @@
                     <div>
                         <div clas="table">
                             <div class="row">
-                                <div class="col-sm-8">
+                                    <div class="col-sm-12">
                                         <span>
                                             <h2><i class="fa fa-book"></i> Feature:  Products</h2>
                                         </span>
                                     </div>
-                                        <div class="col-sm-4">
-                                        <span class="feature-tags">
-                                                <p class="tag">
-                                                    <span class="badge tag-badge" style="background:default;">
-                                                        <i class="fa fa-tag"></i>&nbsp;<a class="tagLink"
-                                                                                          style="background:default;"
-                                                                                          href="38e4a5533ed3c989f6843772fa948ab4690fffdbd284e8c040c264245fd947bc.html">Post Product Price With String
-                                                        (tag)</a>
-                                                    </span>
-                                                </p>
-                                        </span>
-                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -283,466 +271,10 @@ So that I get my product
                                         <div class="row">
                                             <div class="col-sm-12">
 
-                                                    <!--- TOC --->
-                                                    <div id="toc">
-                                                        <h3>Overview</h3>
-                                                        <table class="table" id="toc-table">
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#56d350518c18397bc9d20ebcb2fc6b6092ccc079ae9257654e718e21d434edbc" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As an user I have to be able to get all products
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="1cc6458d896a35af6ed4ed9ffa86e6200fd95ba738e8c3ea98c3b8c4edaa1613.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
+                                                    <h3>Requirements Overview</h3>
 
+                                                    <div id="tree"></div>
 
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="1cc6458d896a35af6ed4ed9ffa86e6200fd95ba738e8c3ea98c3b8c4edaa1613.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#54d9133bdb3607d92a019567c40b81d6fb30a91a9a307cabef3b330332fd4723" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: POST - As an admin i have to be able to create products
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="11211dfa0a6c73a3c4d5782d07091aa0f4daed9c558c9a3ffc0d0a8413fb245e.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="11211dfa0a6c73a3c4d5782d07091aa0f4daed9c558c9a3ffc0d0a8413fb245e.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#3344297511bc68c41380baec284a7c117b4ae77118bdaf0fc2c302a925cd846a" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As a user i have to be able to search product by id
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="57c76c56f166b0122729e9da84e0a42839a169cefd3f84760142103d4c6b4341.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="57c76c56f166b0122729e9da84e0a42839a169cefd3f84760142103d4c6b4341.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#4dcb3ccb53ee127b090c198b5fee3a2ffe5b2deedce4270e712613175fb89801" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As a user i cannot get product which is the ID is not created
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="05f45cc78e50e2081f22f7e9fbcdfb37fa90c94ebd75f05f2ca6ba5c5a59c839.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="05f45cc78e50e2081f22f7e9fbcdfb37fa90c94ebd75f05f2ca6ba5c5a59c839.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#34b4295a0d7dcc26563a088b48070cd0cc718104e82414674dd781f2cfd0accf" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: GET - As a user i cannot GET product with string input
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="639d040f25911fdcec12f7a019e940839712745870cb9b4de1732321e9036b99.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="639d040f25911fdcec12f7a019e940839712745870cb9b4de1732321e9036b99.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#8c0b4a7812774db6ae6dd8da58ee8df2438432d305eb582721e563d771d69351" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: POST - As a user i cannot POST product Name with Number
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="4997dff5798e3a8dc7b8ccd356fcc1473b32158a1eae1be52ecbef9a4da01719.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="4997dff5798e3a8dc7b8ccd356fcc1473b32158a1eae1be52ecbef9a4da01719.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#ab2ae60ca0ae41cdc1636df4236176d2bb1ebf577166745b706b75d894d0f6dd" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: POST - As a user i cannot POST product Name with Null
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="135df65057277ebe4cccb012defb55a595a2be87162c46746a1cedc73a5fd3ac.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="135df65057277ebe4cccb012defb55a595a2be87162c46746a1cedc73a5fd3ac.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td style="width:95%;" class="toc-title">
-                                                                                <span class="orphan-scenario-toc-entry">
-                                                                                    <a href="#929c6ea4ff24222e149a3fc782c0ca8723f848df67b0ee98102abcf78f291c14" title="View scenario details">
-                                                                                        <i class="far fa-comment-dots"></i> Scenario: POST - As a user i cannot input price With String
-                                                                                    </a>
-                                                                                </span>
-                                                                            </td>
-                                                                            <td style="width:5%;">
-                                                                                <table>
-                                                                                    <tr>
-                                                                                        <td>
-                                                                                            <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                               href="dd5d1ca2fe46857e10ebed7071a0dcbe414f7be4ccc126184cdc21c113a5d5b9.html"
-                                                                                               title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                                                                </a>
-
-
-                                                                                        </td>
-                                                                                            <td>
-                                                                                                <a style="margin-left:0.5em;padding-right: 1.5em;"
-                                                                                                   href="dd5d1ca2fe46857e10ebed7071a0dcbe414f7be4ccc126184cdc21c113a5d5b9.html"
-                                                                                                   title="View test results">
-                                                                                                    <i class="fas fa-search-plus"></i>
-                                                                                                </a>
-                                                                                            </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </td>
-                                                                        </tr>
-                                                        </table>
-                                                    </div>
-                                                    <!--- END OF TOC --->
-
-                                                    <h3>Scenarios</h3>
-
-                                                        <a name="0679fede-f3b8-4082-ae94-bfed60e88437" ></a>
-
-
-                                                            <div class="scenario-docs card" id="56d350518c18397bc9d20ebcb2fc6b6092ccc079ae9257654e718e21d434edbc">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="1cc6458d896a35af6ed4ed9ffa86e6200fd95ba738e8c3ea98c3b8c4edaa1613.html"
-                                                                   title="View test results">Scenario: GET - As an user I have to be able to get all products</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request GET all products</p>
-                                                                        <p>Then I validate the status code is 200</p>
-                                                                        <p>And validate data detail all products</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="54d9133bdb3607d92a019567c40b81d6fb30a91a9a307cabef3b330332fd4723">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="11211dfa0a6c73a3c4d5782d07091aa0f4daed9c558c9a3ffc0d0a8413fb245e.html"
-                                                                   title="View test results">Scenario: POST - As an admin i have to be able to create products</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request POST products</p>
-                                                                        <p>Then I validate the status code is 200</p>
-                                                                        <p>And I validate the products that just added is displayed</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="3344297511bc68c41380baec284a7c117b4ae77118bdaf0fc2c302a925cd846a">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="57c76c56f166b0122729e9da84e0a42839a169cefd3f84760142103d4c6b4341.html"
-                                                                   title="View test results">Scenario: GET - As a user i have to be able to search product by id</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request GET products by ID</p>
-                                                                        <p>Then I validate the status code is 200</p>
-                                                                        <p>And i validate data of a product</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="4dcb3ccb53ee127b090c198b5fee3a2ffe5b2deedce4270e712613175fb89801">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="05f45cc78e50e2081f22f7e9fbcdfb37fa90c94ebd75f05f2ca6ba5c5a59c839.html"
-                                                                   title="View test results">Scenario: GET - As a user i cannot get product which is the ID is not created</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products with ID more than total</p>
-                                                                        <p>When I request GET products by ID more than the total</p>
-                                                                        <p>Then I validate the status code is 404</p>
-                                                                        <p>And i validate the error messages of product</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="34b4295a0d7dcc26563a088b48070cd0cc718104e82414674dd781f2cfd0accf">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="639d040f25911fdcec12f7a019e940839712745870cb9b4de1732321e9036b99.html"
-                                                                   title="View test results">Scenario: GET - As a user i cannot GET product with string input</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request GET products with string</p>
-                                                                        <p>Then I validate the status code 400</p>
-                                                                        <p>And i validate another error message of product</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="8c0b4a7812774db6ae6dd8da58ee8df2438432d305eb582721e563d771d69351">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="4997dff5798e3a8dc7b8ccd356fcc1473b32158a1eae1be52ecbef9a4da01719.html"
-                                                                   title="View test results">Scenario: POST - As a user i cannot POST product Name with Number</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request POST products name with number</p>
-                                                                        <p>Then I validate the status code 400</p>
-                                                                        <p>And I validate the error message post product name with number</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="ab2ae60ca0ae41cdc1636df4236176d2bb1ebf577166745b706b75d894d0f6dd">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="135df65057277ebe4cccb012defb55a595a2be87162c46746a1cedc73a5fd3ac.html"
-                                                                   title="View test results">Scenario: POST - As a user i cannot POST product Name with Null</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request POST products name with Null</p>
-                                                                        <p>Then I validate the status code 500</p>
-                                                                        <p>And I validate the error message post product name with Null</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="scenario-docs card" id="929c6ea4ff24222e149a3fc782c0ca8723f848df67b0ee98102abcf78f291c14">
-                                                                <div class="scenario-docs card-header success"
-                                                                     style="min-height:1.5em;">
-                                                                    <div>
-                                                            <span class="scenario-heading">
-                                                                <a href="dd5d1ca2fe46857e10ebed7071a0dcbe414f7be4ccc126184cdc21c113a5d5b9.html"
-                                                                   title="View test results">Scenario: POST - As a user i cannot input price With String</a>
-                                                            </span>
-                                                                        <span class="scenario-result-icon">
-                                                                
-
-                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
-                                                            </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="scenario-docs card-body">
-                                                                        <p>Given I set an endpoint products</p>
-                                                                        <p>When I request POST products price with String</p>
-                                                                        <p>Then I validate the status code 400</p>
-                                                                        <p>And I validate the error message product price with string</p>
-                                                                    <div class="examples">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -751,41 +283,7 @@ So that I get my product
                                 <div id="results" class="tab-pane fade">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-sm-4">
-
-                                                <div style="width:300px;" class="chart-container automated-and-manual-results">
-                                                    <div class="ct-chart ct-square"></div>
-                                                </div>
-                                                <script>
-
-                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
-                                                    // Our series array that contains series objects or in this case series data arrays
-
-                                                    var series = [{meta: 'Passing tests (automated)', value: 8}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
-
-                                                    // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
-                                                    // as you saw in the previous example
-                                                    var options = {
-                                                        width: 350,
-                                                        height: 300
-                                                    };
-
-                                                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                                                        new Chartist.Pie('.ct-chart', {
-                                                            series: series,
-                                                            labels: labels,
-                                                        }, {
-                                                            donut: true,
-                                                            donutWidth: 60,
-                                                            donutSolid: true,
-                                                            startAngle: 270,
-                                                            showLabel: true
-                                                        }, options);
-                                                    });
-
-                                                </script>
-                                            </div>
-                                            <div class="col-sm-8">
+                                                <div class="col-sm-12">
 
                                                     <table class="table">
                                                         <thead>
@@ -800,12 +298,11 @@ So that I get my product
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count">
-                                                                    <a href="04b55b3f032db725939f21f3b9ea0013f4170949006dbb247e372344f3a68f94.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                 </td>
-                                                            <td class="automated-stats">8</td>
-                                                            <td class="automated-stats">100%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -859,7 +356,7 @@ So that I get my product
                                                         </tr>
                                                         <tr class="summary-stats">
                                                             <td class="aggregate-result-count">Total</td>
-                                                            <td class="automated-stats">8</td>
+                                                            <td class="automated-stats">0</td>
                                                             <td class="automated-stats"></td>
                                                         </tr>
                                                         </tbody>
@@ -881,11 +378,11 @@ So that I get my product
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>17s</td>
-                                                            <td>17s</td>
-                                                            <td>441ms</td>
-                                                            <td>12s</td>
-                                                            <td>2s</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
+                                                            <td>0ms</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -897,116 +394,7 @@ So that I get my product
                                                 <div class="col-sm-12">
                                                     <h3><i class="fas fa-cogs"></i> Automated Tests</h3>
 
-                                                        <table class="scenario-result-table table"
-                                                               id="scenario-results">
-                                                            <thead>
-                                                            <tr>
-                                                                <th class="test-name-column">Scenario</th>
-                                                                <th>Steps</th>
-                                                                <th>Started</th>
-                                                                <th>Duration</th>
-                                                                <th>Result</th>
-                                                            </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="1cc6458d896a35af6ed4ed9ffa86e6200fd95ba738e8c3ea98c3b8c4edaa1613.html">GET - As an user I have to be able to get all products</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:19</td>
-                                                                    <td>12s 524ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="11211dfa0a6c73a3c4d5782d07091aa0f4daed9c558c9a3ffc0d0a8413fb245e.html">POST - As an admin i have to be able to create products</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:32</td>
-                                                                    <td>1s 192ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="57c76c56f166b0122729e9da84e0a42839a169cefd3f84760142103d4c6b4341.html">GET - As a user i have to be able to search product by id</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:33</td>
-                                                                    <td>846ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="05f45cc78e50e2081f22f7e9fbcdfb37fa90c94ebd75f05f2ca6ba5c5a59c839.html">GET - As a user i cannot get product which is the ID is not created</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:34</td>
-                                                                    <td>736ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="639d040f25911fdcec12f7a019e940839712745870cb9b4de1732321e9036b99.html">GET - As a user i cannot GET product with string input</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:35</td>
-                                                                    <td>548ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="4997dff5798e3a8dc7b8ccd356fcc1473b32158a1eae1be52ecbef9a4da01719.html">POST - As a user i cannot POST product Name with Number</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:36</td>
-                                                                    <td>799ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="135df65057277ebe4cccb012defb55a595a2be87162c46746a1cedc73a5fd3ac.html">POST - As a user i cannot POST product Name with Null</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:37</td>
-                                                                    <td>509ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="scenario-result SUCCESS">
-                                                                    <td>
-                                                                            <a href="dd5d1ca2fe46857e10ebed7071a0dcbe414f7be4ccc126184cdc21c113a5d5b9.html">POST - As a user i cannot input price With String</a>
-                                                                    </td>
-                                                                    <td>4</td>
-                                                                    <td>07:58:37</td>
-                                                                    <td>441ms</td>
-                                                                    <td>
-                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                                style="display:none">SUCCESS</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                        No automated tests were executed
 
                                                 </div>
                                             </div>

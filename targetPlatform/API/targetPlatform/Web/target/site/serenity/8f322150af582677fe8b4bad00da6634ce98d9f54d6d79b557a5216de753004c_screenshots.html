@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="ab38b8d735b5ae63fe86443a3d675b1c5d594631c6b5fd855b3ccb979a46e41c.html">Registration</a></span>
+                > <span class="truncate-60"><a
+                    href="8f322150af582677fe8b4bad00da6634ce98d9f54d6d79b557a5216de753004c.html">Registration scenario </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-05-2022 08:34</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Registration </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+i want to register<br />
+so that i have an account to login into website
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="b5a51fc64ff8ca83de06a356b9bd0e5c8cbde54af2b1e8e384a9228fd9a93a6f.html">Register
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Registration scenario
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">When i click icon account and register<br>And i input "&lt;name&gt;" my name<br>And i input "&lt;email&gt;" my email<br>And i input "&lt;password&gt;" my password<br>And i click register button<br>Then i get my "&lt;result&gt;"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="88a754c7ec520f5a7ac8696c8a2d23590ccade8e0da47a0eeab5f8df8e62c9c9.png" title=" 1: Registration scenario ({name=sonyaprds, email=sonya@gmail.com, password=sonya, result=new user})" width="1554"/>
+                <img src="88a754c7ec520f5a7ac8696c8a2d23590ccade8e0da47a0eeab5f8df8e62c9c9.png" title=" Given i access the web" width="1554"/>
+                <img src="88a754c7ec520f5a7ac8696c8a2d23590ccade8e0da47a0eeab5f8df8e62c9c9.png" title=" When i click icon account and register" width="1554"/>
+                <img src="becf25742f962f1ef6abe1000a3d5f2022731460b7616a24218875a92033b8db.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="becf25742f962f1ef6abe1000a3d5f2022731460b7616a24218875a92033b8db.png" title=" And i input &quot;sonyaprds&quot; my name" width="1554"/>
+                <img src="adc76115bff8ae42ff0c7878cb36073d277138954219e6228f1eba22d9d23848.png" title=" And i input &quot;sonyaprds&quot; my name (completed)" width="1554"/>
+                <img src="adc76115bff8ae42ff0c7878cb36073d277138954219e6228f1eba22d9d23848.png" title=" And i input &quot;sonya@gmail.com&quot; my email" width="1554"/>
+                <img src="76984dfb2b662d100c11ebb8ddcffe2fce4329a7911d826477e3cd200a8cc58c.png" title=" And i input &quot;sonya@gmail.com&quot; my email (completed)" width="1554"/>
+                <img src="76984dfb2b662d100c11ebb8ddcffe2fce4329a7911d826477e3cd200a8cc58c.png" title=" And i input &quot;sonya&quot; my password" width="1554"/>
+                <img src="bcf1f5c914341f0f7925f9369cf2563929c7281920d3a7c6f33eee633fab8635.png" title=" And i input &quot;sonya&quot; my password (completed)" width="1554"/>
+                <img src="bcf1f5c914341f0f7925f9369cf2563929c7281920d3a7c6f33eee633fab8635.png" title=" And i click register button" width="1554"/>
+                <img src="cf545f2062fbe9eebb0e433e270535fffcd316780d3dafc0649d24794bec6c44.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="cf545f2062fbe9eebb0e433e270535fffcd316780d3dafc0649d24794bec6c44.png" title=" Then i get my &quot;new user&quot;" width="1554"/>
+                <img src="5d6e9c7754e99e567107865758e718821b07c1845ca29a4c7ebb253b5b38f1f8.png" title=" Then i get my &quot;new user&quot; (completed)" width="1554"/>
+                <img src="5d6e9c7754e99e567107865758e718821b07c1845ca29a4c7ebb253b5b38f1f8.png" title=" 1: Registration scenario ({name=sonyaprds, email=sonya@gmail.com, password=sonya, result=new user}) (completed)" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" 2: Registration scenario ({name=sonyaprds, email=sonya@gmail.com, password=, result=Register Page})" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" Given i access the web" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" When i click icon account and register" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" And i input &quot;sonyaprds&quot; my name" width="1554"/>
+                <img src="f07ec4e342b31b5599fd74bc233449feeb57dcd97f70ceb6212fec012d11fc8e.png" title=" And i input &quot;sonyaprds&quot; my name (completed)" width="1554"/>
+                <img src="f07ec4e342b31b5599fd74bc233449feeb57dcd97f70ceb6212fec012d11fc8e.png" title=" And i input &quot;sonya@gmail.com&quot; my email" width="1554"/>
+                <img src="b282d83128c8b8628f203d465fc6e6dd1269183c772aaca45d3a66a618f3fc3b.png" title=" And i input &quot;sonya@gmail.com&quot; my email (completed)" width="1554"/>
+                <img src="b282d83128c8b8628f203d465fc6e6dd1269183c772aaca45d3a66a618f3fc3b.png" title=" And i input &quot;&quot; my password" width="1554"/>
+                <img src="b644826ee5f33046ad5885c90ae459a4ae0286f93a4dbb652e360b7719a6b4f3.png" title=" And i input &quot;&quot; my password (completed)" width="1554"/>
+                <img src="b644826ee5f33046ad5885c90ae459a4ae0286f93a4dbb652e360b7719a6b4f3.png" title=" And i click register button" width="1554"/>
+                <img src="abae68c7c75840aa89e0a6522c8d030d48770b1b922039664953aeb95e968f07.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="abae68c7c75840aa89e0a6522c8d030d48770b1b922039664953aeb95e968f07.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="45c3be5bae99d35ce8d22fd3c973b233cdfbffd170771ac2d6b3067dc18ae217.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="45c3be5bae99d35ce8d22fd3c973b233cdfbffd170771ac2d6b3067dc18ae217.png" title=" 2: Registration scenario ({name=sonyaprds, email=sonya@gmail.com, password=, result=Register Page}) (completed)" width="1554"/>
+                <img src="1d73632bea656f275406e5588189c5fda3aa3a35d6c15ea67d7e700b794d80b9.png" title=" 3: Registration scenario ({name=sonyaprds, email=, password=sonya, result=Register Page})" width="1554"/>
+                <img src="1d73632bea656f275406e5588189c5fda3aa3a35d6c15ea67d7e700b794d80b9.png" title=" Given i access the web" width="1554"/>
+                <img src="1d73632bea656f275406e5588189c5fda3aa3a35d6c15ea67d7e700b794d80b9.png" title=" When i click icon account and register" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" And i input &quot;sonyaprds&quot; my name" width="1554"/>
+                <img src="5660d25790a4a4463865d6a7c027c83c60f7ea8f3d9f98096914f61a46ff9d05.png" title=" And i input &quot;sonyaprds&quot; my name (completed)" width="1554"/>
+                <img src="5660d25790a4a4463865d6a7c027c83c60f7ea8f3d9f98096914f61a46ff9d05.png" title=" And i input &quot;&quot; my email" width="1554"/>
+                <img src="9e4245bacbac9518fbbf2609f826b4f2fba55e2d321f0747137286cbc4fc4789.png" title=" And i input &quot;&quot; my email (completed)" width="1554"/>
+                <img src="9e4245bacbac9518fbbf2609f826b4f2fba55e2d321f0747137286cbc4fc4789.png" title=" And i input &quot;sonya&quot; my password" width="1554"/>
+                <img src="c46870a1ba9ad63fbbd718a0f8b931f578a0db87d932776dd806dfed9975be5c.png" title=" And i input &quot;sonya&quot; my password (completed)" width="1554"/>
+                <img src="c46870a1ba9ad63fbbd718a0f8b931f578a0db87d932776dd806dfed9975be5c.png" title=" And i click register button" width="1554"/>
+                <img src="95b5c637162cdd128213528fba1c7e42e2eaad4c5906728fdb86609a56278c39.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="95b5c637162cdd128213528fba1c7e42e2eaad4c5906728fdb86609a56278c39.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="dfc3bf494b92d1a6169bd8e484818f781e73535e9c1e87e110d0a2048f4c611c.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="dfc3bf494b92d1a6169bd8e484818f781e73535e9c1e87e110d0a2048f4c611c.png" title=" 3: Registration scenario ({name=sonyaprds, email=, password=sonya, result=Register Page}) (completed)" width="1554"/>
+                <img src="0b0079e1c2bf3dfcd7ebb9972544d63e6e1f7180da49406446d7178bc370420d.png" title=" 4: Registration scenario ({name=, email=sonya@gmail.com, password=sonya, result=Register Page})" width="1554"/>
+                <img src="0b0079e1c2bf3dfcd7ebb9972544d63e6e1f7180da49406446d7178bc370420d.png" title=" Given i access the web" width="1554"/>
+                <img src="0b0079e1c2bf3dfcd7ebb9972544d63e6e1f7180da49406446d7178bc370420d.png" title=" When i click icon account and register" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" And i input &quot;&quot; my name" width="1554"/>
+                <img src="98dec6cdd5d7bbbf65cbf458f4578d70474b10fc1061b233c1cba2c1ad6cf536.png" title=" And i input &quot;&quot; my name (completed)" width="1554"/>
+                <img src="98dec6cdd5d7bbbf65cbf458f4578d70474b10fc1061b233c1cba2c1ad6cf536.png" title=" And i input &quot;sonya@gmail.com&quot; my email" width="1554"/>
+                <img src="ce2fc949ad111545234db41d00434fa563f93329a9f162fc24f914dd8043c1c8.png" title=" And i input &quot;sonya@gmail.com&quot; my email (completed)" width="1554"/>
+                <img src="ce2fc949ad111545234db41d00434fa563f93329a9f162fc24f914dd8043c1c8.png" title=" And i input &quot;sonya&quot; my password" width="1554"/>
+                <img src="a3c6426bc88fb1bd08c1e988e9933eaaf68a84a3679ef06195dd4971af3044f7.png" title=" And i input &quot;sonya&quot; my password (completed)" width="1554"/>
+                <img src="a3c6426bc88fb1bd08c1e988e9933eaaf68a84a3679ef06195dd4971af3044f7.png" title=" And i click register button" width="1554"/>
+                <img src="dc32e47c9d7cb5d2b2bd0d7f8cc591f1d6c223281d926f0076027974ae8b68a9.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="dc32e47c9d7cb5d2b2bd0d7f8cc591f1d6c223281d926f0076027974ae8b68a9.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="3b11020dfabff7dc9eb9682b5d3551928983a3bd3d7c3b73bb84cf35027d9a88.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="3b11020dfabff7dc9eb9682b5d3551928983a3bd3d7c3b73bb84cf35027d9a88.png" title=" 4: Registration scenario ({name=, email=sonya@gmail.com, password=sonya, result=Register Page}) (completed)" width="1554"/>
+                <img src="4574346f60ce0f72ae9584bfea574b7e0b8516de8366f8b2fe2b59c8599e7297.png" title=" 5: Registration scenario ({name=, email=, password=sonya, result=Register Page})" width="1554"/>
+                <img src="4574346f60ce0f72ae9584bfea574b7e0b8516de8366f8b2fe2b59c8599e7297.png" title=" Given i access the web" width="1554"/>
+                <img src="4574346f60ce0f72ae9584bfea574b7e0b8516de8366f8b2fe2b59c8599e7297.png" title=" When i click icon account and register" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="42b6e28073eecb73abfcec403b3897bc9b3bf5f45933c508112c9d359726cb09.png" title=" And i input &quot;&quot; my name" width="1554"/>
+                <img src="3d3c549ca94ced565996300470a675212c29c97b054a82a8a4d8cc7788765221.png" title=" And i input &quot;&quot; my name (completed)" width="1554"/>
+                <img src="3d3c549ca94ced565996300470a675212c29c97b054a82a8a4d8cc7788765221.png" title=" And i input &quot;&quot; my email" width="1554"/>
+                <img src="b2618bb71227c95a87cf8c1c8453a33c7c69b0da961f92160ccc334f0ab19f88.png" title=" And i input &quot;&quot; my email (completed)" width="1554"/>
+                <img src="b2618bb71227c95a87cf8c1c8453a33c7c69b0da961f92160ccc334f0ab19f88.png" title=" And i input &quot;sonya&quot; my password" width="1554"/>
+                <img src="a742bf2ba794e81490f758d68b6ff4b7210ba2ed7b3d07ea565e2d417017e810.png" title=" And i input &quot;sonya&quot; my password (completed)" width="1554"/>
+                <img src="a742bf2ba794e81490f758d68b6ff4b7210ba2ed7b3d07ea565e2d417017e810.png" title=" And i click register button" width="1554"/>
+                <img src="68eeaa3f34be7c21f8c003875855d33503f3ac1e1c57f2b018313a1177458364.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="68eeaa3f34be7c21f8c003875855d33503f3ac1e1c57f2b018313a1177458364.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="945acd5290fd7678a65e3ad4e96385e108d0d7eea07a52c826414bbbdd311f6b.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="945acd5290fd7678a65e3ad4e96385e108d0d7eea07a52c826414bbbdd311f6b.png" title=" 5: Registration scenario ({name=, email=, password=sonya, result=Register Page}) (completed)" width="1554"/>
+                <img src="379259df502f6cc9b73b08cf5065eba2850bd95822dd4edcca54d89529443167.png" title=" 6: Registration scenario ({name=, email=sonya@gmail.com, password=, result=Register Page})" width="1554"/>
+                <img src="379259df502f6cc9b73b08cf5065eba2850bd95822dd4edcca54d89529443167.png" title=" Given i access the web" width="1554"/>
+                <img src="379259df502f6cc9b73b08cf5065eba2850bd95822dd4edcca54d89529443167.png" title=" When i click icon account and register" width="1554"/>
+                <img src="5878dcd14100689100ab56c5d7caf6cd4ce6332ad83640f0e979aa03cc6729b9.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="5878dcd14100689100ab56c5d7caf6cd4ce6332ad83640f0e979aa03cc6729b9.png" title=" And i input &quot;&quot; my name" width="1554"/>
+                <img src="a76c86f2fb2e38149651894696d3b32322d5070dd23a66d13a6717158cc2909e.png" title=" And i input &quot;&quot; my name (completed)" width="1554"/>
+                <img src="a76c86f2fb2e38149651894696d3b32322d5070dd23a66d13a6717158cc2909e.png" title=" And i input &quot;sonya@gmail.com&quot; my email" width="1554"/>
+                <img src="f76f0743268a833dcb122c0a5639e18dc2a4696972ac78a05fd3ced2200f06f7.png" title=" And i input &quot;sonya@gmail.com&quot; my email (completed)" width="1554"/>
+                <img src="f76f0743268a833dcb122c0a5639e18dc2a4696972ac78a05fd3ced2200f06f7.png" title=" And i input &quot;&quot; my password" width="1554"/>
+                <img src="c5839062e7df0094dbb62a14b4c738f310ca85005b191f1ba1153d1e333bfc29.png" title=" And i input &quot;&quot; my password (completed)" width="1554"/>
+                <img src="c5839062e7df0094dbb62a14b4c738f310ca85005b191f1ba1153d1e333bfc29.png" title=" And i click register button" width="1554"/>
+                <img src="a4a92be7d7624701e8996bcf826979a616ee48f2cf85cc0b134784e2008b2b93.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="a4a92be7d7624701e8996bcf826979a616ee48f2cf85cc0b134784e2008b2b93.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="7ff3f1caa1502bc72af08d7627add7d9fcc62d99f4a37044d8c75c82f8bcbeb3.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="7ff3f1caa1502bc72af08d7627add7d9fcc62d99f4a37044d8c75c82f8bcbeb3.png" title=" 6: Registration scenario ({name=, email=sonya@gmail.com, password=, result=Register Page}) (completed)" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" 7: Registration scenario ({name=sonyaprds, email=, password=, result=Register Page})" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" Given i access the web" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" When i click icon account and register" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" And i input &quot;sonyaprds&quot; my name" width="1554"/>
+                <img src="d2b17ff9cf943499fe7f94eaac600a35e97a4b8df9c765f8ae9a62810df69919.png" title=" And i input &quot;sonyaprds&quot; my name (completed)" width="1554"/>
+                <img src="d2b17ff9cf943499fe7f94eaac600a35e97a4b8df9c765f8ae9a62810df69919.png" title=" And i input &quot;&quot; my email" width="1554"/>
+                <img src="158992bfae031013883907dfa3fa6b712e07e9f6be4f0ba5ad53cb2c1d4d8463.png" title=" And i input &quot;&quot; my email (completed)" width="1554"/>
+                <img src="158992bfae031013883907dfa3fa6b712e07e9f6be4f0ba5ad53cb2c1d4d8463.png" title=" And i input &quot;&quot; my password" width="1554"/>
+                <img src="c4525ae5210d7da253e9d35f740b11f7153f1ffe8034bc3e5440782beb59b5ec.png" title=" And i input &quot;&quot; my password (completed)" width="1554"/>
+                <img src="c4525ae5210d7da253e9d35f740b11f7153f1ffe8034bc3e5440782beb59b5ec.png" title=" And i click register button" width="1554"/>
+                <img src="8f9814fb415b25b7daf6021ea65c0e60fb56078e020979cdb51fe581824a5458.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="8f9814fb415b25b7daf6021ea65c0e60fb56078e020979cdb51fe581824a5458.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="ac0e5a711a2dc07cfe89927cc0f7905fd1014df4f5bfd7663e9a68abcd447efc.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="ac0e5a711a2dc07cfe89927cc0f7905fd1014df4f5bfd7663e9a68abcd447efc.png" title=" 7: Registration scenario ({name=sonyaprds, email=, password=, result=Register Page}) (completed)" width="1554"/>
+                <img src="ce78e0b66b77990746612c952fe49f4fcf3a0e69ccb2a9896efc3780e040737c.png" title=" 8: Registration scenario ({name=, email=, password=, result=Register Page})" width="1554"/>
+                <img src="ce78e0b66b77990746612c952fe49f4fcf3a0e69ccb2a9896efc3780e040737c.png" title=" Given i access the web" width="1554"/>
+                <img src="ce78e0b66b77990746612c952fe49f4fcf3a0e69ccb2a9896efc3780e040737c.png" title=" When i click icon account and register" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" And i input &quot;&quot; my name" width="1554"/>
+                <img src="4b7ae3cf9389a99511e97ab16a818122f1af155fff6fe274de2322ba7b73d8e7.png" title=" And i input &quot;&quot; my name (completed)" width="1554"/>
+                <img src="4b7ae3cf9389a99511e97ab16a818122f1af155fff6fe274de2322ba7b73d8e7.png" title=" And i input &quot;&quot; my email" width="1554"/>
+                <img src="fa9b628cc55bdf045837c06685d329c1eaf6ba55b56f551fdd721018bfddbf68.png" title=" And i input &quot;&quot; my email (completed)" width="1554"/>
+                <img src="fa9b628cc55bdf045837c06685d329c1eaf6ba55b56f551fdd721018bfddbf68.png" title=" And i input &quot;&quot; my password" width="1554"/>
+                <img src="ed61b3dba8e8e3a62c13c36d62d87684c3864a3865a39ed53b72aa6ed340d70c.png" title=" And i input &quot;&quot; my password (completed)" width="1554"/>
+                <img src="ed61b3dba8e8e3a62c13c36d62d87684c3864a3865a39ed53b72aa6ed340d70c.png" title=" And i click register button" width="1554"/>
+                <img src="7e404f0976769861fc74fe940778fd1386c7b1a29d44cdb9adb4117e7a64c61e.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="7e404f0976769861fc74fe940778fd1386c7b1a29d44cdb9adb4117e7a64c61e.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="d7d3066b7f49c5c0427f4f62767d34231169a4d638dd9434057501c49d938b82.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="d7d3066b7f49c5c0427f4f62767d34231169a4d638dd9434057501c49d938b82.png" title=" 8: Registration scenario ({name=, email=, password=, result=Register Page}) (completed)" width="1554"/>
+                <img src="d771de3eb4fe5336cd94c4adf6fb7a74bf11d1b1dbc365eab49bcbd7c1fcad5a.png" title=" 9: Registration scenario ({name=same, email=same, password=same, result=Register Page})" width="1554"/>
+                <img src="d771de3eb4fe5336cd94c4adf6fb7a74bf11d1b1dbc365eab49bcbd7c1fcad5a.png" title=" Given i access the web" width="1554"/>
+                <img src="d771de3eb4fe5336cd94c4adf6fb7a74bf11d1b1dbc365eab49bcbd7c1fcad5a.png" title=" When i click icon account and register" width="1554"/>
+                <img src="bc10bdd43aea083cb61afc1041343a8e7bf03489bbc1da19d8103865fa1b6cdf.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="bc10bdd43aea083cb61afc1041343a8e7bf03489bbc1da19d8103865fa1b6cdf.png" title=" And i input &quot;same&quot; my name" width="1554"/>
+                <img src="a44634c4b4f6461b0d3f3ab6e4ae800336fd5928d9731952d8b1c42e9259dec8.png" title=" And i input &quot;same&quot; my name (completed)" width="1554"/>
+                <img src="a44634c4b4f6461b0d3f3ab6e4ae800336fd5928d9731952d8b1c42e9259dec8.png" title=" And i input &quot;same&quot; my email" width="1554"/>
+                <img src="f3cb167bd5e89ab29d8f220c152e92ba29dddd26b98c99f431d5093cae365a6c.png" title=" And i input &quot;same&quot; my email (completed)" width="1554"/>
+                <img src="f3cb167bd5e89ab29d8f220c152e92ba29dddd26b98c99f431d5093cae365a6c.png" title=" And i input &quot;same&quot; my password" width="1554"/>
+                <img src="b757cb6f86c9b07b4e06707fc7b9570de37f4afebfd265195f88ed3b1f509394.png" title=" And i input &quot;same&quot; my password (completed)" width="1554"/>
+                <img src="b757cb6f86c9b07b4e06707fc7b9570de37f4afebfd265195f88ed3b1f509394.png" title=" And i click register button" width="1554"/>
+                <img src="28832470513d37b9abdbeac08dcbc6a5b4a9923ea8fb3f8296789176075451f7.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="28832470513d37b9abdbeac08dcbc6a5b4a9923ea8fb3f8296789176075451f7.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="35dcd2bf2eab8e94a021c74c2a986f92e8ea4716bf7c166ab14a51d4448d5808.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="35dcd2bf2eab8e94a021c74c2a986f92e8ea4716bf7c166ab14a51d4448d5808.png" title=" 9: Registration scenario ({name=same, email=same, password=same, result=Register Page}) (completed)" width="1554"/>
+                <img src="7b89a6586ec28014e76e7dabba559434ccf2b0ef996afa1b6ddb2baccb9449c3.png" title=" 10: Registration scenario ({name=gopal, email=same, password=same, result=Register Page})" width="1554"/>
+                <img src="7b89a6586ec28014e76e7dabba559434ccf2b0ef996afa1b6ddb2baccb9449c3.png" title=" Given i access the web" width="1554"/>
+                <img src="7b89a6586ec28014e76e7dabba559434ccf2b0ef996afa1b6ddb2baccb9449c3.png" title=" When i click icon account and register" width="1554"/>
+                <img src="db59267c229222a99d25c8d05678b1d913826219aba907ac26e518637d797d28.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="db59267c229222a99d25c8d05678b1d913826219aba907ac26e518637d797d28.png" title=" And i input &quot;gopal&quot; my name" width="1554"/>
+                <img src="fda0581697e1403f50fb3a38df4815a2c5e5a8f06975f714dea5599989aceade.png" title=" And i input &quot;gopal&quot; my name (completed)" width="1554"/>
+                <img src="fda0581697e1403f50fb3a38df4815a2c5e5a8f06975f714dea5599989aceade.png" title=" And i input &quot;same&quot; my email" width="1554"/>
+                <img src="144e8a6fdb34a24b650ecc3f02c2a1b3b6409525068480e9d9ce21fd71d97e19.png" title=" And i input &quot;same&quot; my email (completed)" width="1554"/>
+                <img src="144e8a6fdb34a24b650ecc3f02c2a1b3b6409525068480e9d9ce21fd71d97e19.png" title=" And i input &quot;same&quot; my password" width="1554"/>
+                <img src="8469f9959cb9432a3343f08314bce1f9b5e677e967470fa8fad6b360356aa8c4.png" title=" And i input &quot;same&quot; my password (completed)" width="1554"/>
+                <img src="8469f9959cb9432a3343f08314bce1f9b5e677e967470fa8fad6b360356aa8c4.png" title=" And i click register button" width="1554"/>
+                <img src="94ef4d9b377f4ee2491926e0bffbe4d5f76dee4b3a5b9ff5259e3960fb726c2f.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="94ef4d9b377f4ee2491926e0bffbe4d5f76dee4b3a5b9ff5259e3960fb726c2f.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="e6d6aefdaa4fbcb0976a6836b75726eccd039e66197fa0539d901363940eb0c3.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="e6d6aefdaa4fbcb0976a6836b75726eccd039e66197fa0539d901363940eb0c3.png" title=" 10: Registration scenario ({name=gopal, email=same, password=same, result=Register Page}) (completed)" width="1554"/>
+                <img src="3c572d11653100216de3bc3cb09e59422d0a95e2c9e5b374220f472eb199e210.png" title=" 11: Registration scenario ({name=same, email=gopal@gmail.com, password=same, result=new user})" width="1554"/>
+                <img src="3c572d11653100216de3bc3cb09e59422d0a95e2c9e5b374220f472eb199e210.png" title=" Given i access the web" width="1554"/>
+                <img src="3c572d11653100216de3bc3cb09e59422d0a95e2c9e5b374220f472eb199e210.png" title=" When i click icon account and register" width="1554"/>
+                <img src="5878dcd14100689100ab56c5d7caf6cd4ce6332ad83640f0e979aa03cc6729b9.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="5878dcd14100689100ab56c5d7caf6cd4ce6332ad83640f0e979aa03cc6729b9.png" title=" And i input &quot;same&quot; my name" width="1554"/>
+                <img src="38d6cbcbf9c4e6bd85f34cc5f7c201de8f92cf8ea5cadcbd534d12032efa27c4.png" title=" And i input &quot;same&quot; my name (completed)" width="1554"/>
+                <img src="38d6cbcbf9c4e6bd85f34cc5f7c201de8f92cf8ea5cadcbd534d12032efa27c4.png" title=" And i input &quot;gopal@gmail.com&quot; my email" width="1554"/>
+                <img src="6255840ed620f5277e2ac473ab075744eb3f28cd82627e8d9e80f9e193db16f7.png" title=" And i input &quot;gopal@gmail.com&quot; my email (completed)" width="1554"/>
+                <img src="6255840ed620f5277e2ac473ab075744eb3f28cd82627e8d9e80f9e193db16f7.png" title=" And i input &quot;same&quot; my password" width="1554"/>
+                <img src="545b38a1134fdee310b5f81d6a608aab1516d3003756d49b418cf46344231a1f.png" title=" And i input &quot;same&quot; my password (completed)" width="1554"/>
+                <img src="545b38a1134fdee310b5f81d6a608aab1516d3003756d49b418cf46344231a1f.png" title=" And i click register button" width="1554"/>
+                <img src="7608b1db6e5e4643a51bef2a9e05928e2b0c32e584366d7e47c0d060335bfa53.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="7608b1db6e5e4643a51bef2a9e05928e2b0c32e584366d7e47c0d060335bfa53.png" title=" Then i get my &quot;new user&quot;" width="1554"/>
+                <img src="7608b1db6e5e4643a51bef2a9e05928e2b0c32e584366d7e47c0d060335bfa53.png" title=" Then i get my &quot;new user&quot; (completed)" width="1554"/>
+                <img src="7608b1db6e5e4643a51bef2a9e05928e2b0c32e584366d7e47c0d060335bfa53.png" title=" 11: Registration scenario ({name=same, email=gopal@gmail.com, password=same, result=new user}) (completed)" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" 12: Registration scenario ({name=same, email=same, password=gopalos, result=Register Page})" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" Given i access the web" width="1554"/>
+                <img src="3933b05db65e61fb5e9f3da1b1891826546c5beac5131a358ed5eb919145de8d.png" title=" When i click icon account and register" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" When i click icon account and register (completed)" width="1554"/>
+                <img src="fa2c2524d3f8e5f6ab35472399ad99cab14a625b335c5da78c3a6cfbfc20f144.png" title=" And i input &quot;same&quot; my name" width="1554"/>
+                <img src="281b0ec5de8a3daa2dcacefb323c2c39ed0012faeb63be1023e5005a05f11772.png" title=" And i input &quot;same&quot; my name (completed)" width="1554"/>
+                <img src="281b0ec5de8a3daa2dcacefb323c2c39ed0012faeb63be1023e5005a05f11772.png" title=" And i input &quot;same&quot; my email" width="1554"/>
+                <img src="841e3055431588084c7986e2fde5e25f198614fc993df0b64813032fe145eead.png" title=" And i input &quot;same&quot; my email (completed)" width="1554"/>
+                <img src="841e3055431588084c7986e2fde5e25f198614fc993df0b64813032fe145eead.png" title=" And i input &quot;gopalos&quot; my password" width="1554"/>
+                <img src="cf9c293108371f436b37385c8fe9716d794fb9d8fdb57ac851c225834c90d17d.png" title=" And i input &quot;gopalos&quot; my password (completed)" width="1554"/>
+                <img src="cf9c293108371f436b37385c8fe9716d794fb9d8fdb57ac851c225834c90d17d.png" title=" And i click register button" width="1554"/>
+                <img src="358539c45484eee39abc1c07dbae214c73afb9b85480c2c5464ca1561cdc91bf.png" title=" And i click register button (completed)" width="1554"/>
+                <img src="358539c45484eee39abc1c07dbae214c73afb9b85480c2c5464ca1561cdc91bf.png" title=" Then i get my &quot;Register Page&quot;" width="1554"/>
+                <img src="b524950574e87841301795f543bd38a1ccc72d0c6abd9907836edbb7d4b1f863.png" title=" Then i get my &quot;Register Page&quot; (completed)" width="1554"/>
+                <img src="b524950574e87841301795f543bd38a1ccc72d0c6abd9907836edbb7d4b1f863.png" title=" 12: Registration scenario ({name=same, email=same, password=gopalos, result=Register Page}) (completed): <span class='success-color'>SUCCESS</span>" width="1554"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.2.1</span>
+</div>
+</body>
+</html>

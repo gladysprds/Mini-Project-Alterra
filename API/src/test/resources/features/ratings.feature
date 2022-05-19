@@ -31,3 +31,11 @@ Feature: Ratings
           Then I validate the status code is 200
           And I validate the rating is not changes
 
+        @postRatingWithNumberOver5
+        Scenario: POST - As a user i cant give rating over 5
+          Given I set an endpoint for ratings
+          When I request POST with number over five
+          Then I validate the status code is 500
+          And I validate the rating error message will displayed
+
+

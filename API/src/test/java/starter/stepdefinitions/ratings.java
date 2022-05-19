@@ -57,4 +57,14 @@ public class ratings {
     public void iRequestPOSTWithGiveAnyCharacterExceptNumber() throws Exception {
         postRatingsProducts.notGiveNumber();
     }
+
+    @When("I request POST with number over five")
+    public void iRequestPOSTWithNumberOver()throws Exception {
+        postRatingsProducts.giveNumberOverFive();
+    }
+
+    @And("I validate the rating error message will displayed")
+    public void iValidateTheRatingErrorMessageWillDisplayed() {
+        postRatingsProducts.validateErrormessageDisplayedForRating();
+    }
 }

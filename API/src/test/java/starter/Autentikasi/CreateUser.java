@@ -16,6 +16,8 @@ public class CreateUser {
     General general = new General();
     String base_url = "https://be-qa.alta.id/api/";
     String email;
+    String password;
+    String fullname;
 
     public String endpointCreateUser(){
         return base_url + "auth/register";
@@ -37,9 +39,20 @@ public class CreateUser {
             this.email = null;
         }
 
-        requestData.put("fullname", fullname);
+        if (fullname.equals("same")){
+            this.fullname = "y";
+        }else{
+            this.fullname = fullname;
+        }
+
+        if (password.equals("same")) {
+            this.password = "y";
+        }else {
+            this.password=password;
+        }
+        requestData.put("fullname", this.fullname);
         requestData.put("email", this.email);
-        requestData.put("password", password);
+        requestData.put("password", this.password);
 
         SerenityRest.given().header("Content-Type", "application/json")
                 .header("Authorization", "Bearer" + " tokentokentokentokentoken")

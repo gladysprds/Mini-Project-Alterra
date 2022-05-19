@@ -13,12 +13,13 @@ Feature: Autentikasi
 
     Examples:
      |fullname | email | password | status_code | message |
-     |selamat|detektifastr@gmail.com|selamat123 |200|success|
-     |       |detektifastr@gmail.com|anom123 |400 |fullname required|
-     |threeanom||anom123 |400|email required|
-     |threeanom|detektifastr@gmail.com|        |400   |password required|
-     |         |                |        |400        |null|
-     |threeanom| same |anom123 |400         |duplicate|
+     |         |detektifastr@gmail.com|     |400|password required|
+     |threeanom|                      |     |400|email required|
+     |         |                      |anom123|400         |email required|
+     |same|same|same|400         |duplicate|
+     |threeanom|same|same|400|duplicate|
+     |same|detektifastr@gmail.com|same|200|success|
+     |same|same|anom123|400|duplicate|
 
     @login
     Scenario Outline: POST - As a user i have to be able to login
