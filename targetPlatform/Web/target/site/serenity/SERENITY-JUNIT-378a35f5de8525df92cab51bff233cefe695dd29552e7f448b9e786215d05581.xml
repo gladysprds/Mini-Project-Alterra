@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Order" skipped="0" tests="4" time="40.45" timestamp="2022-05-18 08:34:03"><testcase name="enter new product to cart"/><testcase name="add product to cart"/><testcase name="reduce product on cart"/><testcase name="empty cart"/></testsuite>

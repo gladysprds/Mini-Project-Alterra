@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Ratings","As a user i want to see ratings of product","SUCCESS","2022-05-18T07:58:18.9635599+07:00[Asia/Jakarta]","0.0","13.25"
+"Ratings","POST - As a user i want to give ratings on a product","SUCCESS","2022-05-18T07:58:32.8157717+07:00[Asia/Jakarta]","0.0","1.5"
+"Ratings","POST-As a user i can put nothing on product rating","SUCCESS","2022-05-18T07:58:34.380889+07:00[Asia/Jakarta]","0.0","1.02"
+"Ratings","POST - As a user i can give any character except number for product rating","SUCCESS","2022-05-18T07:58:35.5099773+07:00[Asia/Jakarta]","0.0","1.36"

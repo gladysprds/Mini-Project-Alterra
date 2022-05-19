@@ -1,0 +1,4 @@
+com\example\acceptanceTest\AcceptanceTestSuite.class
+com\example\steps\registerStep.class
+com\example\steps\LoginSteps.class
+com\example\hooks\AndroidHooks.class
