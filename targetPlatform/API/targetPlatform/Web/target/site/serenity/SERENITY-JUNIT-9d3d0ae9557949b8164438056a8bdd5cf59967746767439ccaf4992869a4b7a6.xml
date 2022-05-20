@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="transaction" skipped="0" tests="4" time="39.36" timestamp="2022-05-18 08:33:51"><testcase name="Logout"/><testcase name="buy product with login first"/><testcase name="buy product without login first"/><testcase name="buy product without register first"/></testsuite>

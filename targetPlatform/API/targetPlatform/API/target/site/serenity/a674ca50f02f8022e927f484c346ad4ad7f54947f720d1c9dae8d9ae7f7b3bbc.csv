@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Categories","GET - As an user I have to be able to get all categories","SUCCESS","2022-05-18T07:58:19.5916079+07:00[Asia/Jakarta]","0.0","12.82"
-"Categories","POST - As an admin i have to be able to create categories","SUCCESS","2022-05-18T07:58:32.433746+07:00[Asia/Jakarta]","0.0","1.55"
-"Categories","POST - AS an admin i cannot input Null categories Name","SUCCESS","2022-05-18T07:58:34.275886+07:00[Asia/Jakarta]","0.0","1.11"
-"Categories","POST - AS an admin i cannot input categories Name with number","SUCCESS","2022-05-18T07:58:35.4659756+07:00[Asia/Jakarta]","0.0","0.9"

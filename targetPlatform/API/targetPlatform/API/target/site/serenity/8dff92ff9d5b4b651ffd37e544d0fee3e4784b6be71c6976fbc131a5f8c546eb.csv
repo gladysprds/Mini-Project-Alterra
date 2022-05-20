@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Comments","POST - As a user i have to be able to create a comment on a product","SUCCESS","2022-05-18T07:58:19.6186082+07:00[Asia/Jakarta]","0.0","12.62"
-"Comments","GET - As a user I have to be able to get the comment","SUCCESS","2022-05-18T07:58:32.3377386+07:00[Asia/Jakarta]","0.0","1.28"
-"Comments","POST - As a user I cannot input null comments on product","SUCCESS","2022-05-18T07:58:33.6468312+07:00[Asia/Jakarta]","0.0","0.69"
