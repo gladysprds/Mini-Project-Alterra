@@ -14,6 +14,7 @@ public class HomePage extends BasePageObject {
     }
     public void validateHomePageAppear()throws Exception{
         Assertions.assertTrue(isDisplayed(homePageText()));
+        click(homePageText());
         Thread.sleep(3000);
     }
 

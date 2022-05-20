@@ -11,8 +11,6 @@ import static com.example.app.driver.AndroidDriverInit.driver;
 public class LoginPage extends BasePageObject {
 
 
-
-
     By loginText(){
         return By.xpath("//android.view.View[@content-desc=\"Login\"]");
     }
@@ -36,10 +34,6 @@ public class LoginPage extends BasePageObject {
     By errorMessageEmailNull() {
         return By.xpath("//android.view.View[@content-desc=\"email can not empty\"]");
     }
-
-
-
-
 
 
     public void validateloginTextAppeared(){

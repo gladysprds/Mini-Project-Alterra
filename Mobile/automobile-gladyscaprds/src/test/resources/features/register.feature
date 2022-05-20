@@ -18,15 +18,4 @@ Feature: Registration
     Examples:
       |name |email|password|result|
       |kowboy|kowboy@gmail.com|kowboy|new user|
-      |sonyaprds|sonya@gmail.com|     |Register Page|
-      |sonyaprds|               |sonya|Register Page|
-      |         |sonya@gmail.com|sonya|Register Page|
-      |         |               |sonya|Register Page|
-      |         |sonya@gmail.com|     |Register Page|
-      |sonyaprds|               |     |Register Page|
-      |         |               |     |Register Page|
-      |same     |same           |same |Register Page|
-      |gopal    |same           |same |Register Page|
-      |same     |gopal@gmail.com|same |new user     |
-      |same     |same           |gopalos|Register Page|
 

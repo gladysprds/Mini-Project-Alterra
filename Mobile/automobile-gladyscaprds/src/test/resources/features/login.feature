@@ -9,9 +9,7 @@ Feature: Login
     Examples:
       |email|password|result|
       |gladys@gmail.com|gladys|home page|
-      |gladys@gmail.com|    |password null|
-      |   |realgladz1511|email null|
-      |   |             |password and email null|
-      |gladys@gmail.com|gladz1511#|Login Page|
-      |glad@gmail.com|realgladz1511|Login Page|
-      |glad@gmail.com|gladz1511#|Login Page|
+
+
+
+
